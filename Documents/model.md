@@ -48,7 +48,7 @@ TABLE FoodData(
 )
 ```
 
-> [!tldr] Valores nutricionais associados à `FoodData`
+> Valores nutricionais associados à `FoodData`
 > Os diversos valores, indicados pelo comentário acima, são 
 > 
 > `"Nutrient Data Bank Number", "Data.Alpha Carotene", "Data.Beta Carotene","Data.Beta Cryptoxanthin", "Data.Carbohydrate", "Data.Cholesterol", "Data.Choline", "Data.Fiber", "Data.Lutein and Zeaxanthin", "Data.Lycopene", "Data.Niacin", "Data.Protein", "Data.Retinol", "Data.Riboflavin", "Data.Selenium", "Data.Sugar Total", "Data.Thiamin", "Data.Water", "Data.Fat.Monosaturated Fat", "Data.Fat.Polysaturated Fat", "Data.Fat.Saturated Fat", "Data.Fat.Total Lipid", "Data.Major Minerals.Calcium", "Data.Major Minerals.Copper", "Data.Major Minerals.Iron", "Data.Major Minerals.Magnesium", "Data.Major Minerals.Phosphorus", "Data.Major Minerals.Potassium", "Data.Major Minerals.Sodium", "Data.Major Minerals.Zinc", "Data.Vitamins.Vitamin A - RAE", "Data.Vitamins.Vitamin B12", "Data.Vitamins.Vitamin B6", "Data.Vitamins.Vitamin C", "Data.Vitamins.Vitamin E", "Data.Vitamins.Vitamin K"`
@@ -242,7 +242,7 @@ Table Prices(
 )
 ```
 
->[!abstract] Construção dos preços
+> Construção dos preços
 >A implementação da *feature* de precificação dos alimentos (objetos `Food`) se dará através de um cálculo sobre todas as entradas na tabela `Prices` nas quais o objeto `Food` é referenciado.
 >Se, por exemplo, a precificação for realizada através do produto de uma média de $n$ objetos `Price` que referenciam um determinado objeto `Food`, por um fator de lucro $k$, diga-se
 >$$\text{Price}_{\text{Food, Final}} = k \cdot \frac{1}{n} \cdot \sum_{i=0}^{n} \text{~Price}_{i}$$
@@ -257,7 +257,7 @@ Table Descriptors(
 )
 ```
 
-> [!abstract] Descritores de atributos para `FoodData`
+> Descritores de atributos para `FoodData`
 > A tabela `Descriptors` reúne todos os descritores necessários para descrever os atributos nutricionais dos alimentos. Assim, uma vez implementado a aplicação final, será possível receber a descrição de um atributo, `carbohydrate`, por exemplo, através de
 >  
 > `>  describe carbohydrate`
@@ -273,5 +273,5 @@ Table Queries(
 )
 ```
 
-> [!abstract] Armazenar os resultados de pesquisas feitas por usuários
+> Armazenar os resultados de pesquisas feitas por usuários
 > As pesquisas feitas por usuários poderão ser armazenadas em uma tabela, `Queries`, composta por um identificador único, a *query* do usuário e o resultado obtido pelo sistema. Desta forma, tanto uma organização interna voltada para melhoramentos (análise, por exemplo, dos tipos de pesquisas mais frequentemente feitas), quanto a análise para descoberta de possíveis *bugs* ou *queries* que retornam resultados indesejados ou errôneos.
